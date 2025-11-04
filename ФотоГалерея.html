@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя фотогалерея</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-around; /* Распределяем блоки равномерно */
+      flex-wrap: wrap;               /* Разрешаем перенос на новую строку */
+      gap: 20px;                     /* Отступ между элементами */
+      margin-top: 30px;
+    }
+
+    .photo {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      width: 200px;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Мои любимые животные 🐾</h1>
+
+  <div class="gallery">
+    <div class="photo">
+      <img src="1.jpg" alt="Котик">
+      <div class="caption">Котик</div>
+    </div>
+    <div class="photo">
+      <img src="2.jpg" alt="Щенок">
+      <div class="caption">Щенок</div>
+    </div>
+    <div class="photo">
+      <img src="3.jpg" alt="Панда">
+      <div class="caption">Панда</div>
+    </div>
+    <div class="photo">
+      <img src="4.jpg" alt="Энот">
+      <div class="caption">Энот</div>
+    </div>
+    <div class="photo">
+      <img src="5.jpg" alt="Альпака">
+      <div class="caption">Альпака</div>
+    </div>
+  </div>
+</body>
+</html>
